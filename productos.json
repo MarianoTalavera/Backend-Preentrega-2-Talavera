@@ -1,1 +1,100 @@
-[]
+[ {
+    "id": 1,
+    "title": "Producto 1",
+    "description": "Aquí, el producto numero 1",
+    "price": 50,
+    "thumbnail": "Sin imagen",
+    "code": 1,
+    "stock": 1000
+  },
+  {
+    "id": 2,
+    "title": "Producto 2",
+    "description": "Aquí, el producto numero 2",
+    "price": 100,
+    "thumbnail": "Sin imagen",
+    "code": 2,
+    "stock": 1000
+  },
+  {
+    "id": 3,
+    "title": "Producto 3",
+    "description": "Aquí, el producto numero 3",
+    "price": 150,
+    "thumbnail": "Sin imagen",
+    "code": 3,
+    "stock": 1000
+  },
+  {
+    "id": 4,
+    "title": "Producto 4",
+    "description": "Aquí, el producto numero 4",
+    "price": 200,
+    "thumbnail": "Sin imagen",
+    "code": 4,
+    "stock": 1000
+  },
+  {
+    "id": 5,
+    "title": "Producto 5",
+    "description": "Aquí, el producto numero 5",
+    "price": 250,
+    "thumbnail": "Sin imagen",
+    "code": 5,
+    "stock": 1000
+  },
+  {
+    "id": 6,
+    "title": "Producto 6",
+    "description": "Aquí, el producto numero 6",
+    "price": 300,
+    "thumbnail": "Sin imagen",
+    "code": 6,
+    "stock": 1000
+  },
+  {
+    "id": 7,
+    "title": "Producto 7",
+    "description": "Aquí, el producto numero 7",
+    "price": 350,
+    "thumbnail": "Sin imagen",
+    "code": 7,
+    "stock": 1000
+  },
+  {
+    "id": 8,
+    "title": "Producto 8",
+    "description": "Aquí, el producto numero 8",
+    "price": 400,
+    "thumbnail": "Sin imagen",
+    "code": 8,
+    "stock": 1000
+  },
+  {
+    "id": 9,
+    "title": "Producto 9",
+    "description": "Aquí, el producto numero 9",
+    "price": 450,
+    "thumbnail": "Sin imagen",
+    "code": 9,
+    "stock": 1000
+  },
+  {
+    "id": 10,
+    "title": "Producto 10",
+    "description": "Aquí, el producto numero 10",
+    "price": 500,
+    "thumbnail": "Sin imagen",
+    "code": 10,
+    "stock": 1000
+  },
+  {
+    "id": 11,
+    "title": "Producto 11",
+    "description": "Aquí, el producto numero 11",
+    "price": 550,
+    "thumbnail": "Sin imagen",
+    "code": 11,
+    "stock": 1000
+  }
+]

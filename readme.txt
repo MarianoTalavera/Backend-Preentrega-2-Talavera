@@ -1,40 +1,29 @@
-DESAFÍO ENTREGABLE - PROCESO DE TESTING: Manejo de archivos
+DESAFÍO ENTREGABLE - PROCESO DE TESTING: Servidores con express
 
-Se creará una instancia de la clase “ProductManager”
-    const administrarProductos = new ProductManager("productos.json");
+Desarrollar un servidor basado en express donde podamos hacer consultas a nuestro archivo de productos.
 
-Se llamará “getProducts” recién creada la instancia, debe devolver un arreglo vacío []
-    administrarProductos.getProducts()
+Se instalarán las dependencias a partir del comando npm install
+    npm i nodemon -D
+    npm i express
 
-Se llamará al método “addProduct” con los campos: title: “producto prueba” description:”Este es un producto prueba” price:200, thumbnail:”Sin imagen” code:”abc123”, stock:25
-    administrarProductos.addProducts({
-        title: "producto prueba",
-        description: "Este es un producto prueba",
-        price: 200,
-        thumbnail: "Sin imagen",
-        code: "abc123",
-        stock: 25,
-});
+Se echará a andar el servidor
+    npm run dev
 
-El objeto debe agregarse satisfactoriamente con un id generado automáticamente SIN REPETIRSE
+Se revisará que el archivo YA CUENTE CON AL MENOS DIEZ PRODUCTOS CREADOS al momento de su entrega, es importante para que los tutores no tengan que crear los productos por sí mismos, y así agilizar el proceso de tu evaluación.
+    productos.json
 
-Se llamará el método “getProducts” nuevamente, esta vez debe aparecer el producto recién agregado
+Se corroborará que el servidor esté corriendo en el puerto 8080.
+    const PORT = 8080;
 
-Se llamará al método “getProductById” y se corroborará que devuelva el producto con el id especificado, en caso de no existir, debe arrojar un error.
-    administrarProductos.getProductById(1)
+    miapp.listen(PORT, () => {
+        console.log(`Server on port ${PORT}`)})
 
-Se llamará al método “updateProduct” y se intentará cambiar un campo de algún producto, se evaluará que no se elimine el id y que sí se haya hecho la actualización.
-    const productUpdated = {
-        title: "producto Updated",
-        description: "producto Updated",
-        price: 300,
-        thumbnail: "Sin imagen",
-        code: "abc123",
-        stock: 30,
-    }
+    http://localhost:8080/
 
+Se mandará a llamar desde el navegador a la url http://localhost:8080/products sin query, eso debe devolver todos los 10 productos.
 
-    administrarProductos.updateProduct(1, productUpdated)
+Se mandará a llamar desde el navegador a la url http://localhost:8080/products?limit=5 , eso debe devolver sólo los primeros 5 de los 10 productos.
 
-Se llamará al método “deleteProduct”, se evaluará que realmente se elimine el producto o que arroje un error en caso de no existir.
-    administrarProductos.deleteProduct(1, productUpdated)
+Se mandará a llamar desde el navegador a la url http://localhost:8080/products/2, eso debe devolver sólo el producto con id=2.
+
+Se mandará a llamar desde el navegador a la url http://localhost:8080/products/34123123, al no existir el id del producto, debe devolver un objeto con un error indicando que el producto no existe.
